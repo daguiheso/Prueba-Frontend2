@@ -9,6 +9,7 @@
 		    return function (input) {
 		    	if (!input) return "";
 		    	input = input
+		    	.replace('extralarge', '');
 		        return input.toLowerCase();
 		    };
   		})

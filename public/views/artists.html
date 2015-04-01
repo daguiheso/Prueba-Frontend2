@@ -1,16 +1,10 @@
-<div class="panel panel-primary">
 
-	<input type="text" ng-model="query" class="form-control" placeholder="Search">
-	<div class="panel-heading">
-		Lista
-	</div>
-	<div ng-repeat="item in fjson.results.artistmatches.artist  | filter:query " class="">
-		<p>Nombre:<a href="/#artist/{{ item.name | normalize }}">{{item.name}}</a></p>
-		<div  ng-repeat="(key, value) in item.image" class="div">
-			{{value}}
-			<!-- <div  ng-repeat="pru in value" class="div">
-				{{pru}}
-			</div> -->
-		</div>
+<input type="text" ng-model="query" class="form-control" placeholder="Search">
+<div class="panel-heading">Lista</div>
+
+<div ng-repeat="item in fjson.results.artistmatches.artist  | filter:query ">	
+	<h3><a href="/#artist/{{ item.name | normalize }}">{{item.name}}</a></h3>
+		<div ng-repeat="(key,value) in item.image[3]" class="">
+		<img src="{{value | normalize}}" alt="" class="img-circle">	
 	</div>
 </div>
