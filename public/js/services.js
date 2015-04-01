@@ -21,7 +21,7 @@
 				var deferred = $q.defer(); 
 				$http.get('http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=Cher&api_key=78b5913e02ae88a4d6ecdc0339543e16&format=json') //esto me devuelve los datos en una promesa, la promesa recibe una function que se llama callback
 					.success(function(data){ 
-						deferred.resolve(data.artist)
+						deferred.resolve(data)
 					});
 
 				return deferred.promise;

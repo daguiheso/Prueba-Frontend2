@@ -1,10 +1,7 @@
 <p>Artis</p>
-<p>Name: {{artist.name}}</p>
-<p>Url: <a href="{{artist.url}}">{{artist.url}}</a></p>
-<p>Streamable: {{artist.streamable}}</p>
-<p>Ontour: {{artist.ontour}}</p>
-<p>Listeners: {{artist.stats.listeners}}</p>
-<p>Plays: {{artist.stats.playcount}}</p>
-<div ng-repeat="(key,value) in artist.image[3]" class="">
+<p>Name: {{artist.artist.name}}</p>
+<p>Url: <a href="{{artist.artist.url}}">{{artist.artist.url}}</a></p>
+<p>Biografia: {{artist.artist.bio.content}}</p>
+<div ng-repeat="(key,value) in artist.artist.image[3]" class="">
 	<img src="{{value | normalize}}" alt="">	
 </div>
