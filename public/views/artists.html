@@ -5,9 +5,7 @@
 		Lista
 	</div>
 	<div ng-repeat="item in fjson.results.artistmatches.artist  | filter:query " class="">
-		<a href="/#artist/{{ item.name | normalize }}">
-			Nombre: {{item.name}}
-		</a>
+		<p>Nombre:<a href="/#artist/{{ item.name | normalize }}">{{item.name}}</a></p>
 		<div  ng-repeat="(key, value) in item.image" class="div">
 			{{value}}
 			<!-- <div  ng-repeat="pru in value" class="div">
