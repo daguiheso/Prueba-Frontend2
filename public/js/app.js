@@ -8,6 +8,7 @@
   	'ngRoute', 
     'prueba.services',
     'prueba.controllers',
+    'prueba.directives',
     'prueba.filters'
   ]);
 

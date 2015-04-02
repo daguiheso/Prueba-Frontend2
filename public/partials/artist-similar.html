@@ -1,0 +1,12 @@
+<div class="page-header relative">
+	<h4 class="tcenter">Artists Similar</h4>
+</div>
+<div ng-repeat="item in artist.artist.similar.artist" class="left">
+	<button type="button" class="btn btn-info btn-group-xs mgmd"><a class="title" href="/#artist/{{ item.name | normalize }}">{{item.name}}</a></button>
+</div>			
+
+<nav class="">
+  <ul class="pager absolute btnprev">
+    <li><a href="#/">Busqueda</a></li>
+  </ul>
+</nav>

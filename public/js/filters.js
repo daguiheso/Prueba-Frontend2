@@ -8,8 +8,7 @@
 		.filter('normalize', function () {
 		    return function (input) {
 		    	if (!input) return "";
-		    	input = input
-		    	.replace('extralarge', '');
+		    	input = input.replace('extralarge', '');
 		        return input.toLowerCase();
 		    };
   		})

@@ -1,1 +1,44 @@
-.left{float:left}.right{float:right}.relative{position:relative}.content{padding:70px}.search{width:400px !important;margin:20px 0}.panel-content{padding:10px;display:inline-flex}.title{text-decoration:none;}.title:hover{text-decoration:none}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.mgmd {
+  margin: 10px;
+}
+.pd0 {
+  padding: 0 !important;
+}
+.tcenter {
+  text-align: center;
+}
+.body {
+  padding: 40px 0;
+}
+.content {
+  padding: 70px;
+}
+.search {
+  width: 400px !important;
+  margin: 20px 0;
+}
+.panel-content {
+  padding: 10px;
+  display: inline-flex;
+}
+.title {
+  text-decoration: none;
+}
+.title:hover {
+  text-decoration: none;
+}
+.btnprev {
+  bottom: 99px;
+}

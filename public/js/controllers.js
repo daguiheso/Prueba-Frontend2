@@ -17,7 +17,7 @@
 			var name = $routeParams.name;
 
 			pruebaService.allInfo(name).then(function (data){
-					console.log(data);
+					console.log(data.artist.similar.artist);
 					$scope.artist = data;
 				})
 		}])

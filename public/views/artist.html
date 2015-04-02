@@ -1,7 +1,10 @@
-<p>Artis</p>
-<p>Name: {{artist.artist.name}}</p>
-<p>Url: <a href="{{artist.artist.url}}">{{artist.artist.url}}</a></p>
-<p>Biografia: {{artist.artist.bio.content}}</p>
-<div ng-repeat="(key,value) in artist.artist.image[3]" class="">
-	<img src="{{value | normalize}}" alt="">	
+<div class="col-lg-3 col-md-3 col-sm-2"></div>
+<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+	<div class="panel panel-default pd0">
+		<div class="panel-heading tcenter"><h3>{{artist.artist.name}}</h3></div>
+		<artist-image></artist-image>
+		<artist-information></artist-information>
+		<artist-biografy></artist-biografy>
+	</div>
+	<artist-similar></artist-similar>
 </div>
